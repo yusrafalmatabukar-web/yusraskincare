@@ -1,0 +1,203 @@
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+/*========================================
+        MAKING VARIABLES &BASICS
+=========================================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    resize: none;
+}
+:root{
+    --color-primary:#fff;
+    --color-secondary:#e86ed6;
+    --color-tertiary:#777;
+    --color-text:#111;
+    --shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
+    --transition: all.4s ease-in-out;
+
+    
+--width-lg:85%;
+--width-sm:95%
+}
+body{
+    font-family:'dancing script',cursive;
+   font-family: 'League Spartan', sans-serif;
+    color: var(--color-text);
+    line-height: 1.7; 
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    height: 0.5rem;
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--color-primary);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--color-secondary) ;
+}
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+a{
+    color: var(--color-text);
+}
+span{
+    font-size: 9rem;
+}
+h1,h2,h3,h4{
+    line-height: 1.2;
+}
+h1{
+    font-size: 2.8rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.6rem;
+}
+h4{
+    font-size: 1.3rem;
+}
+h5{
+    font-size: 1rem;
+}
+.container{
+    margin: 0 auto;
+    width: var(--width-lg);
+}
+section{
+    padding: 6rem 0 3rem;
+}
+section h2{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+/*========================================
+                NAVBAR
+=========================================*/
+nav{
+    background-color: var(--color-text);
+    color: var(--color-primary)!important;
+}
+.logo{
+    color:var(--color-primary);
+    padding: 1rem 0;
+}
+.logo div:first-child{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 1;
+}
+.logo div:first-child span{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 1;
+    color: var(--color-secondary);
+}
+.logo div:last-child{
+    line-height: 1;
+    text-transform: uppercase;
+    font-size: .7rem;
+    letter-spacing: .23rem;
+    color: #999 ;
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .navlist{
+    display: flex;
+}
+nav .navlist{
+    text-transform: uppercase;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 111;
+}
+nav .navlist li a{
+    color: var(--color-primary);
+    padding: 2rem;
+    position: relative;
+}
+.nav .navlist a::before{
+    content: '';
+    position:absolute;
+    top: 0;
+    left:0;
+    background:var(--color-secondary);
+    height: 95%;
+    width: 100%;
+   border-bottom: 2rem solid var(--color-primary);
+
+    z-index: -1;
+    transition: var(--transition);
+    opacity: 0;
+    visibility: hidden;
+}
+.navlist li a:hover::before,
+.navlist li a:active::before
+{
+    height: 95%;
+    opacity: 1;
+    visibility: visible;
+}
+.menu-btn.lnr{
+    font-size: 1.1rem;
+     
+} 
+.nav-icons{
+    display: flex;
+    gap: 21rem;
+}
+.nav-icons.lnr{
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.nav-icons.lnr:hover{
+    color: var(--color-secondary);
+}
+/*========================================
+                home
+=========================================*/
+.home{
+    padding: 0%;
+}
+.home.slide{
+    background: url(images/bg.png);
+    background-position: center;   
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.home.slide2{
+    background: url(images/about2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition:transform 0.5s;
+}
+.col-4 img{
+    width:50%;
+}
