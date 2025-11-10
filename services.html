@@ -1,10 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width,
+            initial-scale=1.0">
+
+            <title>SKINCARE WEBSITE</title>
+            <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+            <link rel="manifest" href="https://cdn.buymeacoffee.com/static/prod/10.9.3/build/manifest.json">
+            <link rel="stylesheet" href="css/style.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        </head>
+        <body>
+            <nav>
+                <div class="container nav-container">
+                    <a href="home" class="logo">
+                      <div>MAKE<span>up</span></div> 
+                      <div>FASHION STEPS</div>
+                    </a>
+                    <ul  class="navlist">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="team.html">about</a></li>
+                        <li><a href="services.html">services</a></li>
+                        <li><a href="blog.html">blog</a></li>
+                    </ul>
+                    <!--<div class="nav-icons">
+                        <div class="menu-btn">
+                                <span class="lnr lnr-menu"></span><br>
+                                <div class="cart-btn">
+                                    <span class="lnr lnr-cart"></span>
+                                    <div class="star-btn">
+                                        <span class="lnr lnr-star"></span>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                </div>-->
+<style>
 body{font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
 
@@ -34,42 +70,35 @@ input[type=submit]:hover {
 
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color:black;
   padding: 20px;
 }
 </style>
 </head>
-<body>
-   <ul  class="navlist">
-                        <li><a href="index.html">home</a></li>
-                        <li><a href="about.html">about</a></li>
-                        <li><a href="services.html">services</a></li>
-                        <li><a href="blog.html">blog</a></li>
-                    </ul>
-    <h3>SERVICE FORM</h3>
 
+
+<body>
+<h3 style="font-family: 'Times New Roman', Times, serif;">SERVICE FORM</h3>
 <div class="container">
   <form action="/action_page.php">
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
     <label for="lname">Last Name</label>
     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
     <label for="country">Country</label>
     <select id="country" name="country">
+      <label for="country">what would you like to purchase</label>
       <option value="australia">Australia</option>
       <option value="canada">Canada</option>
       <option value="usa">USA</option>
       <option value="NIGERIA">NIGERIA</option>
+      <option value="other country">other country</option>
     </select>
-
     <label for="subject">WHAT WOULD YOU LIKE?</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <textarea id="subject" name="subject" placeholder="Write the product you would like to purchase..." style="height:200px"></textarea>
 
     <input type="submit" value="Submit">
   </form>
 </div>
-    
 </body>
 </html>

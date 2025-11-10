@@ -1,137 +1,234 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width,
+            initial-scale=1.0">
+
+            <title>SKINCARE WEBSITE</title>
+            <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+            <link rel="manifest" href="https://cdn.buymeacoffee.com/static/prod/10.9.3/build/manifest.json">
+            <link rel="stylesheet" href="css/style.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
   <style>
-* {
-  box-sizing: border-box;
-}
-
-/* Add a gray background color with some padding */
-body {
-  font-family: Arial;
-  padding: 20px;
-  background: cadetblue;
-}
-
-/* Header/Blog Title */
-.header {
-  padding: 30px;
-  font-size: 40px;
-  text-align: center;
-  background: burlywood;
-}
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {   
-  float: left;
-  width: 75%;
-}
-
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Add a card effect for articles */
 .card {
-   background-color: white;
-   padding: 20px;
-   margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
   text-align: center;
-  background-color: bisque;
-  margin-top: 20px;
+  font-family: arial;
 }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+</style>
+  <style
+  .all-browsers {
+  margin: 0;
+  padding: 5px;
+  background-color: lightgray;
+}
+
+.all-browsers > h1, .browser {
+  margin: 10px;
+  padding: 5px;
+}
+
+.browser {
+  background: white;
+}
+
+.browser > h2, p {
+  margin: 4px;
+  font-size: 90%;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: whitesmoke;
+  color: white;
+}
+</style>
+<style>
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
     width: 100%;
-    padding: 0;
+    margin: 0;
+    padding: 14px;
+  }
+  
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
   }
 }
 </style>
+
 </head>
 <body>
-   <ul  class="navlist">
+
+
+        </head>
+        <body>
+            <nav>
+                <div class="container nav-container">
+                    <a href="home" class="logo">
+                      <div>MAKE<span>up</span></div> 
+                      <div>FASHION STEPS</div>
+                    </a>
+                    <ul  class="navlist">
                         <li><a href="index.html">home</a></li>
-                        <li><a href="about.html">about</a></li>
+                        <li><a href="team.html">about</a></li>
                         <li><a href="services.html">services</a></li>
                         <li><a href="blog.html">blog</a></li>
                     </ul>
-  
-  <div class="header">
-  <h2>Blog page</h2>
+                    <!--<div class="nav-icons">
+                        <div class="menu-btn">
+                                <span class="lnr lnr-menu"></span><br>
+                                <div class="cart-btn">
+                                    <span class="lnr lnr-cart"></span>
+                                    <div class="star-btn">
+                                        <span class="lnr lnr-star"></span>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                </div>-->
+            </nav>
+
+
+
+            <div class="header">
+
 </div>
 
-<div class="row">
-  <div class="leftcolumn">
-    <div class="card">
-      <h2>WE LOVE YOU!!</h2>
-      <h5>FOUND IN 2025</h5>
-      <div class="fakeimg" style="height:200px;">YUSRA'S SKINCARE</div>
-      
-    </div>
-    <div class="card">
-      <h2>OUR AIM</h2>
-      <h5>FOUND IN 2025</h5>
-      <div class="fakeimg" style="height:200px;">EMPOWER YOURSELF WITH BEAUTY AND CARE</div>
-      
-      <p>"Get ready to glow! welcome to our makeup blog,your ultimate destination for latest trends,tips and tricks in the world of beauty.from everyday natural looks to dramatic evening styles,our expert beauty editors and makeup artist share their knowledege to help you unlock your full beauty potential. whether you're a makeup novice or a seasoned pro,we're here to inspire and guide you in your beauty journey".</p>
-    </div>
-  </div>
+<div class="topnav">
+  <input type="text" placeholder="Search..">
+</div>
+
+<div style="padding-left:16px">
+</div>
   <div class="rightcolumn">
     <div class="card">
-      <h2>some of the brands we're working with</h2>
-      <img src="images/cetaphil.jpg">
-      <div class="fakeimg" style="height:100px;" >cetaphil</div>
-      <img src="images/the ordinary.jpg">
-      <p>love yourself and your skin!!!.</p>
+      <h2></h2>
+      
+      <p></p>
     </div>
     <div class="card">
-      <h3>Popular Post</h3>
-      <div class="image"> our beat selling anua!<img src="images/anua.jpg"></div><br>
-      <div class="fakeimg">love seeing the skin glow</div><br>
-      <div class="fakeimg">thanks for checking us out</div>
+      <h3></h3>
+      <div class="image"><img src=""width:40%></div><br>
+      <div class="fakeimg"></div><br>
+      <div class="fakeimg"></div>
     </div>
     <div class="card">
-      <h3>Follow Me</h3>
-      <p>also check us out on your search engines</p>
+      <h3></h3>
+      <p></p>
     </div>
   </div>
 </div>
-
-<div class="footer">
-  <h2></h2>
-  <h3>contact informatiom:yusra'sskincare@gmail.com
-    "copyright 2025[yusra'sskincare]all right reserved
-    subscribe to our latest newsletter:[yusra'sskincare website.com]
-  </h3>
-
+<h2 style="text-align:center; color:black;font-family: 'Times New Roman', Times, serif;">PRODUCT PICTURES AND PRICE</h2>
+<h2 style="text-align: center;color: burlywood;font-family: 'Times New Roman', Times, serif;">HERE ARE PRODUCTS YOU CAN PURCHASE FROM OUR WEBSITE</h2>
+<div class="card">
+  <img src="images/anua.jpg" alt="anua" style="width:100%">
+  <h1>anua</h1>
+  <p class="price">$15.99</p>
+  <p> for dried and oily skin</p>
+  <p><button>Add to Cart</button></p>
+  <img src="images/cetaphil.jpg" alt="cetaphil" style="width:100%">
+  <h1>cetaphil</h1>
+  <p class="price">$19.99</p>
+  <p>for eczema prone skin</p>
+  <p><button>Add to Cart</button></p>
+  <img src="images/the ordinary.jpg" alt="the ordinary" style="width:100%">
+  <h1>the ordinary</h1>
+  <p class="price">$14.99</p>
+  <p>for melanin skin</p>
+  <p><button>Add to Cart</button></p>
+  <img src="images/organic.jpg" alt="anua" style="width:100%">
+  <h1>the organic</h1>
+  <p class="price">$19.99</p>
+  <p>for acne skin</p>
+  <p><button>Add to Cart</button></p>
 </div>
-</body>
-</html>
+
+
+ <script src="js script.js"></script> 
+
+    <footer>
+  <a href="mailto:hege@example.com">yusraskincarewebsite@gmail.com</a></p>
+    </footer>       
+    <audio autoplay loop>
+      <source src="audio/FloyyMenor_Ft_Cris_MJ_-_Gata_Only.mp3">
+
+    </audio>
+        </body>
+    </html>
+             
